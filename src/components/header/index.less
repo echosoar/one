@@ -1,0 +1,96 @@
+.header {
+  height: 36px;
+  .headerInner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 36px;
+    z-index: 4;
+    background: #1a384a;
+    -webkit-app-region: drag;
+
+    .headerText {
+      line-height: 36px;
+      text-align: center;
+      color: #B98181;
+      font-size: 14px;
+      user-select: none;
+    }
+    .headerTabs {
+      height: 36px;
+
+      .tabItem {
+        position: relative;
+        height: 24px;
+        width: 114px;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 6px;
+        margin-right: 6px;
+        border-radius: 3px;
+        background: rgba(0,0,0,.3);
+        padding-left: 24px;
+        padding-right: 24px;
+        box-sizing: border-box;
+        cursor: pointer;
+
+        &:hover {
+          background: rgba(255, 255, 255, .1);
+        }
+
+        &.opened {
+          background: #66CC5C;
+          
+          .tabItemName {
+            color: #ffffff;
+          }
+        }
+
+        .tabItemIcon {
+          position: absolute;
+          top: 4px;
+          left: 4px;
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+          
+
+          &.home {
+            background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAM1BMVEVHcEz////////////////////////////////////////////////////////////////P0YphAAAAEHRSTlMAjEF1EsIHsdzuHy+q0OakD+/fqQAAAI1JREFUOMvN08sSwiAMhWFuIYRSet7/adV27FAM6MJx/HeZ8y3oosZ8O2vf7MBUbLi3DefI2CtxvgOsikg4I0WEFU0U5juwdiIndKWLyBUvpTzfgXqKRaBWl/kOyC4CE6lEiPj5UtYAN1/xMRDvnJcJcI/DjYEclwxBOq70n6BooDTAa8BffhjpgVjzq27RNxjnw50pawAAAABJRU5ErkJggg==");
+          }
+
+
+        }
+
+
+
+        .tabItemName {
+          line-height: 24px;
+          white-space: nowrap;
+          font-size: 12px;
+          color: #A4A3A3;
+          
+        }
+
+        .tabClose {
+          position: absolute;
+          top: 4px;
+          right: 4px;
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          background: rgba(0,0,0,.1) url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAGFBMVEVHcEz///////////////////////////8dS1W+AAAAB3RSTlMAssMKMvCUB1+tVwAAAHBJREFUKM9jYBg4wCIMIo0c4AKuRQYMDMzqIXAF4eXKQAXlpTAlbOXlRQbM6uXlCTAl4uXlykbl5YVwMxiBHKACAYQ1QCXICsBKUBQwMIujKgDrQRHA0IJuKMhacWQl6A7DcDqG5zC8z8CijBZA9AcA6WskrDLRISEAAAAASUVORK5CYII=') center/80% no-repeat;
+
+          &:hover {
+            background-color: rgba(0,0,0,.3);
+          }
+        }
+      }
+    }
+  }
+}
+

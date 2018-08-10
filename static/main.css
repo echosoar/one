@@ -1,0 +1,319 @@
+.header {
+  height: 36px;
+}
+.header .headerInner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 36px;
+  z-index: 4;
+  background: #1a384a;
+  -webkit-app-region: drag;
+}
+.header .headerInner .headerText {
+  line-height: 36px;
+  text-align: center;
+  color: #B98181;
+  font-size: 14px;
+  user-select: none;
+}
+.header .headerInner .headerTabs {
+  height: 36px;
+}
+.header .headerInner .headerTabs .tabItem {
+  position: relative;
+  height: 24px;
+  width: 114px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 6px;
+  margin-right: 6px;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.3);
+  padding-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.header .headerInner .headerTabs .tabItem:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.header .headerInner .headerTabs .tabItem.opened {
+  background: #66CC5C;
+}
+.header .headerInner .headerTabs .tabItem.opened .tabItemName {
+  color: #ffffff;
+}
+.header .headerInner .headerTabs .tabItem .tabItemIcon {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.header .headerInner .headerTabs .tabItem .tabItemIcon.home {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAM1BMVEVHcEz////////////////////////////////////////////////////////////////P0YphAAAAEHRSTlMAjEF1EsIHsdzuHy+q0OakD+/fqQAAAI1JREFUOMvN08sSwiAMhWFuIYRSet7/adV27FAM6MJx/HeZ8y3oosZ8O2vf7MBUbLi3DefI2CtxvgOsikg4I0WEFU0U5juwdiIndKWLyBUvpTzfgXqKRaBWl/kOyC4CE6lEiPj5UtYAN1/xMRDvnJcJcI/DjYEclwxBOq70n6BooDTAa8BffhjpgVjzq27RNxjnw50pawAAAABJRU5ErkJggg==");
+}
+.header .headerInner .headerTabs .tabItem .tabItemName {
+  line-height: 24px;
+  white-space: nowrap;
+  font-size: 12px;
+  color: #A4A3A3;
+}
+.header .headerInner .headerTabs .tabItem .tabClose {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.1) url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAGFBMVEVHcEz///////////////////////////8dS1W+AAAAB3RSTlMAssMKMvCUB1+tVwAAAHBJREFUKM9jYBg4wCIMIo0c4AKuRQYMDMzqIXAF4eXKQAXlpTAlbOXlRQbM6uXlCTAl4uXlykbl5YVwMxiBHKACAYQ1QCXICsBKUBQwMIujKgDrQRHA0IJuKMhacWQl6A7DcDqG5zC8z8CijBZA9AcA6WskrDLRISEAAAAASUVORK5CYII=') center / 80% no-repeat;
+}
+.header .headerInner .headerTabs .tabItem .tabClose:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.lightAppItem {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+  height: 80px;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+  width: 200px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.lightAppItem .lightInfo {
+  position: absolute;
+  bottom: 0;
+  height: 20px;
+  line-height: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px;
+  padding-left: 20px;
+  background: rgba(0, 0, 0, 0.1);
+}
+.lightAppItem .lightInfo .lightInfoIcon {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.lightAppItem .lightInfo .lightInfoName {
+  line-height: 20px;
+  white-space: nowrap;
+  font-size: 12px;
+  color: #A4A3A3;
+  transform-origin: left center;
+  transform: scale(0.8);
+}
+.home .searchForm {
+  position: relative;
+  padding: 0 12px;
+  height: 42px;
+}
+.home .searchForm .searchInput {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 12px;
+  line-height: 42px;
+  border: 0;
+  margin: 0;
+  outline: none;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  color: #E2DBDB;
+  font-size: 12px;
+}
+.home .list {
+  padding: 0 16px;
+}
+.home .list .listTitle {
+  line-height: 30px;
+  font-size: 12px;
+  color: #fff;
+}
+.home .list .listItems .appItem {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 90px;
+  height: 100px;
+  border-radius: 3px;
+  cursor: pointer;
+  background: transparent;
+  transition: background .3s ease;
+}
+.home .list .listItems .appItem:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.home .list .listItems .appItem .appLogo {
+  margin: 6px auto;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.home .list .listItems .appItem .appName {
+  width: 80px;
+  margin-left: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 13px;
+  text-align: center;
+  line-height: 24px;
+  color: #B1B1B1;
+}
+.home .lightApp {
+  height: 80px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.home .lightApp .lightAppContainer {
+  height: 100px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+html,
+body {
+  margin: 0;
+  background: #1a384a;
+  font-family: Microsoft YaHei;
+}
+html .container,
+body .container {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 40px;
+  overflow: auto;
+}
+.lightAppItem {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+  height: 100px;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+  width: 200px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.lightAppItem .lightInfo {
+  position: absolute;
+  bottom: 0;
+  height: 20px;
+  line-height: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px;
+  padding-left: 20px;
+  background: rgba(0, 0, 0, 0.1);
+}
+.lightAppItem .lightInfo .lightInfoIcon {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.lightAppItem .lightInfo .lightInfoName {
+  line-height: 20px;
+  white-space: nowrap;
+  font-size: 12px;
+  color: #A4A3A3;
+  transform-origin: left center;
+  transform: scale(0.8);
+}
+.home .searchForm {
+  position: relative;
+  padding: 0 12px;
+  height: 42px;
+}
+.home .searchForm .searchInput {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 12px;
+  line-height: 42px;
+  border: 0;
+  margin: 0;
+  outline: none;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  color: #E2DBDB;
+  font-size: 12px;
+}
+.home .list {
+  padding: 0 16px;
+}
+.home .list .listTitle {
+  line-height: 30px;
+  font-size: 12px;
+  color: #fff;
+}
+.home .list .listItems .appItem {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 90px;
+  height: 100px;
+  border-radius: 3px;
+  cursor: pointer;
+  background: transparent;
+  transition: background .3s ease;
+}
+.home .list .listItems .appItem:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.home .list .listItems .appItem .appLogo {
+  margin: 6px auto;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.home .list .listItems .appItem .appName {
+  width: 80px;
+  margin-left: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 13px;
+  text-align: center;
+  line-height: 24px;
+  color: #B1B1B1;
+}
+.home .lightApp {
+  height: 100px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.home .lightApp .lightAppContainer {
+  height: 140px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
